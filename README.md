@@ -22,7 +22,7 @@ Algorithm:
 * Firstly, clusters are acquired from one of hierarchial clusterization methods.
 * Then for each cluster major presented label is predicted.
 
-The best option proved to be distence between
+The best option proved to be distance between
 * clusters: 'ward' 
 * points: 'euclidean'
 
