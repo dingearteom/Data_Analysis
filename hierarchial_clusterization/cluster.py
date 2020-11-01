@@ -6,7 +6,7 @@ link = linkage(df, 'ward', 'euclidean')
 
 plt.figure(figsize=(15,15))
 dendrogram(link, color_threshold=-1)
-plt.savefig('dendrogram.png')
+plt.savefig('hierarchial_clusterization/data/dendrogram.png')
 
 dist = link[:, 2]
 
@@ -14,7 +14,7 @@ plt.figure(figsize=(15,12))
 plt.plot(range(len(dist)), dist[::-1], marker='o')
 #plt.axhline(y=2.4, c='blue', linestyle='dashed')
 #plt.text(400, 2.4, c='black', s='10 clasters')
-plt.savefig('elbow.png')
+plt.savefig('hierarchial_clusterization/data/elbow.png')
 
 df['cluster'] = fcluster(link, 10, 'maxclust')
 
