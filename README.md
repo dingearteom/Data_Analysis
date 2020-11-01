@@ -19,7 +19,7 @@ It is obvious that this score cannot be substantially improved.
 This program is in folder **hierarchial_clusterization**.
 
 Algorithm:
-* Firstly, clusters are got from one of hierarchial clusterization methods.
+* Firstly, clusters are acquired from one of hierarchial clusterization methods.
 * Then for each cluster major presented label is predicted.
 
 The best option proved to be distence between
@@ -41,7 +41,7 @@ Though, result was **32.8%**.
 It is implemented in **k-means** folder.
 
 Algorithm:
-* Firstly, clusters are got from k-means algorithm.
+* Firstly, clusters are acquired from k-means algorithm.
 * Then for each cluster major presented label is predicted.
 
 The result comes between **68%** and **75%** which is ultimate threshold.
