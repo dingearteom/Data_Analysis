@@ -1,8 +1,8 @@
 from preprocessing import df, Y
 from header import *
 
-link = linkage(df, 'ward', 'euclidean')
-#link = loadtxt('link.csv', delimiter=',')
+#link = linkage(df, 'ward', 'euclidean')
+link = np.loadtxt('hierarchial_clusterization/link.csv', delimiter=',')
 
 plt.figure(figsize=(15,15))
 dendrogram(link, color_threshold=-1)

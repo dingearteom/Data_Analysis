@@ -1,4 +1,6 @@
 from preprocessing import *
+from rb_tree import RedBlackTree
+from header import *
 
 class triple:
     def __init__(self, left_c, right_c, d):
@@ -61,8 +63,6 @@ def linkage(df):
 
 if __name__ == '__main__':
     link = linkage(df)
-    savetxt('link.csv', link, delimiter=',')
-    #print(link)
-    #_is_link(df.shape[0], link)
+    np.savetxt('hierarchial_clusterization/link.csv', link, delimiter=',')
 
 
