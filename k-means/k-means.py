@@ -1,10 +1,13 @@
-from header import *
 from preprocessing import df, Y
 from class_map import class_map
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+from sklearn.metrics import accuracy_score
 
 models = [KMeans(n_clusters=k).fit(df) for k in range(1, 21)]
 dist = [models[i].inertia_ for i in range(20)]
-
 
 plt.plot(range(1, 21), dist, marker='o')
 plt.xlabel('X')

@@ -15,7 +15,7 @@ for i in range(df.shape[0]):
         else:
             df.iat[i, j] = 0
 
-df.astype('int32')
+df = df.astype('int32')
 
 m = {}
 m['eight'] = 8
